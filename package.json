@@ -1,24 +1,32 @@
 {
   "name": "inverted-index-search-engine",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "devDependencies": {
-    "@types/jest": "^26.0.24",
     "@types/node": "^14.18.12",
-    "jest": "^26.6.3",
+    "c8": "^7.11.0",
+    "esbuild": "^0.14.23",
     "prettier": "^2.5.1",
-    "ts-jest": "^26.5.6",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "vitest": "^0.4.2"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
+    "build": "tsc --noEmit && node ./scripts/build.js",
+    "test": "vitest --run",
     "prettier:base": "prettier --parser typescript --single-quote",
     "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\"",
     "prettier:write": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandelion293949/inverted-index-search-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dandelion293949/inverted-index-search-engine/issues"
+  },
+  "homepage": "https://github.com/dandelion293949/inverted-index-search-engine#readme",
+  "description": ""
 }

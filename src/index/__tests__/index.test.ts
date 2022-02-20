@@ -1,4 +1,5 @@
 import { invertedIndex } from '../index';
+import { describe, test, expect } from 'vitest';
 
 describe('inverted index search', (): void => {
   test('alphabet', (): void => {
